@@ -1,4 +1,4 @@
-package com.example.itc
+package com.example.itc_profile2
 
 import io.flutter.embedding.android.FlutterActivity
 

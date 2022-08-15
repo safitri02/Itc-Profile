@@ -1,6 +1,6 @@
 {
-    "name": "itc",
-    "short_name": "itc",
+    "name": "itc_profile2",
+    "short_name": "itc_profile2",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
