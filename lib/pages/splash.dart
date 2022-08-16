@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:itc_profile2/theme.dart';
 import 'home_page.dart';
+import 'theme.dart';
 
 void main() {
   runApp(const Splash());

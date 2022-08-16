@@ -1,5 +1,5 @@
-import 'package:itc_profile2/theme.dart';
 import 'package:flutter/material.dart';
+import 'theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
