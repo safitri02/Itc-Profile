@@ -40,8 +40,8 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard(
-                          "Nama Lengkap", "Sabrina khairunnisa binti zahir"),
+                      buildCard("nama", "Nama Lengkap",
+                          "Sabrina khairunnisa binti zahir"),
                       SizedBox(
                         height: 15,
                       ),
@@ -56,14 +56,18 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Card buildCard(String judul, String isi) {
+  Card buildCard(String gambar, String judul, String isi) {
     return Card(
       // elevation: 3,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: [
-            // menambahkan image icon (w: 55 h: 55)
+            Image.asset(
+              'assets/images/' + gambar + '.png',
+              width: 55,
+              height: 55,
+            ),
             SizedBox(
               width: 12,
             ),
@@ -80,7 +84,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            // Spacer(),
           ],
         ),
       ),
