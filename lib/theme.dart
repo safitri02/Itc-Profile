@@ -21,8 +21,14 @@ TextStyle subtitleText = TextStyle(
   fontSize: 12,
 );
 
-TextStyle readsubtitleText = TextStyle(
-  color: greyColor,
-  fontWeight: FontWeight.w300,
-  fontSize: 14,
+TextStyle splashText = TextStyle(
+  color: whiteColor,
+  fontWeight: FontWeight.w500,
+  fontSize: 30,
+);
+
+TextStyle subsplashText = TextStyle(
+  color: whiteColor,
+  fontWeight: FontWeight.w500,
+  fontSize: 30,
 );
