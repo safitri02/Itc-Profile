@@ -10,7 +10,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       //hidden debug text
       debugShowCheckedModeBanner: false,
-<<<<<<< HEAD
 
       title: 'ITC Profile',
       home: Scaffold(
@@ -60,10 +59,10 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-=======
+
       theme: ThemeData(
         fontFamily: 'Poppins',
->>>>>>> jadi
+
       ),
       home: Splash(),
     );
