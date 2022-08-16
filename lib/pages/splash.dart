@@ -1,33 +1,40 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
-import 'pages/splash.dart';
+import 'package:itc_profile2/theme.dart';
+import 'home_page.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const Splash());
+}
 
-class MyApp extends StatelessWidget {
+class Splash extends StatelessWidget {
+  const Splash({Key? key}) : super(key: key);
+
+  get onPressed => null;
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       //hidden debug text
       debugShowCheckedModeBanner: false,
-<<<<<<< HEAD
 
       title: 'ITC Profile',
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: ColorITC,
         body: Center(
           child: ListView(
             //padding buat bungkus di listview
             padding: EdgeInsets.all(25),
             children: [
-              Image.asset('images/logoputih.png'),
+              Image.asset('assets/images/logoputih.png'),
               const Text(
                 'ITC PROFILE!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xffffffff),
                   fontSize: 30,
+                  color: Color(0xffffffff),
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Poppins',
                 ),
               ),
               SizedBox(
@@ -37,7 +44,8 @@ class MyApp extends StatelessWidget {
                 'ITC (Introduction To Computer) Profile merupakan studi kasus pada divisi mobile development. nah dari studi kasus ini harapannya nanti para peserta yang ada di divisi mobile app dapat belajar lebih dalam mengenai flutter yang dimana basicnya dimuali dari sini.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 17,
+                  fontFamily: 'Poppins',
                   color: Color(0xffffffff),
                 ),
               ),
@@ -46,7 +54,10 @@ class MyApp extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/profile');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage()),
+                  );
                 },
                 child: Text('Lihat Proflie'.toUpperCase()),
                 style: ElevatedButton.styleFrom(
@@ -60,12 +71,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-=======
-      theme: ThemeData(
-        fontFamily: 'Poppins',
->>>>>>> jadi
       ),
-      home: Splash(),
     );
   }
 }
