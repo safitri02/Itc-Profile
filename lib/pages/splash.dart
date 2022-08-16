@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:itc_profile2/theme.dart';
+import 'package:itc_puzzle/theme.dart';
 import 'home_page.dart';
 
 void main() {
@@ -26,7 +26,8 @@ class Splash extends StatelessWidget {
             //padding buat bungkus di listview
             padding: EdgeInsets.all(25),
             children: [
-              Image.asset('assets/images/logoputih.png'),
+              // image for logo
+              // Image.asset('assets/images/logoputih.png'),
               const Text(
                 'ITC PROFILE!',
                 textAlign: TextAlign.center,
@@ -37,18 +38,8 @@ class Splash extends StatelessWidget {
                   fontFamily: 'Poppins',
                 ),
               ),
-              SizedBox(
-                height: 20,
-              ),
-              const Text(
-                'ITC (Introduction To Computer) Profile merupakan studi kasus pada divisi mobile development. nah dari studi kasus ini harapannya nanti para peserta yang ada di divisi mobile app dapat belajar lebih dalam mengenai flutter yang dimana basicnya dimuali dari sini.',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 17,
-                  fontFamily: 'Poppins',
-                  color: Color(0xffffffff),
-                ),
-              ),
+              // mebambahkan sizebox
+              // menambahkan text deskripsi dan style (f:17)
               SizedBox(
                 height: 40,
               ),

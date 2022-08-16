@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(itc_profile2 LANGUAGES CXX)
+project(itc_puzzle LANGUAGES CXX)
 
 set(BINARY_NAME "itc_profile2")
 

@@ -1,4 +1,4 @@
-import 'package:itc_profile2/theme.dart';
+import 'package:itc_puzzle/theme.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -16,31 +16,15 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
-                Image.asset(
-                  'assets/images/sabrina.png',
-                  height: 100,
-                  width: 100,
-                ),
+                // menabahkan image profile (w:100, h:100)
                 SizedBox(
                   height: 20,
                 ),
-                Text(
-                  'Nama Panggilan',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: whiteColor,
-                  ),
-                ),
+                // menambahkan text profile (f: 20, c: white)
                 SizedBox(
                   height: 2,
                 ),
-                Text(
-                  '@namaIG',
-                  style: TextStyle(
-                    color: lightBlueColor,
-                    fontSize: 16,
-                  ),
-                ),
+                // menambahkan username ig(f:16, c:lightblue)
                 SizedBox(
                   height: 30,
                 ),
@@ -61,83 +45,6 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Prodi", "Teknik Informatika"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("Devisi", "Mobile Development"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("Alamat", "Sleman"),
-                      SizedBox(
-                        height: 15,
-                      ),
-
-                      buildCard("Hobby", "Bermain Game"),
-                      SizedBox(
-                        height: 15,
-                      ),
-
-                      buildCard("Motto", "Belajar dan Berdoa"),
-                      SizedBox(
-                        height: 15,
-                      ),
-
-                      // SizedBox(
-                      //   height: 16,
-                      // ),
-                      // Row(
-                      //   //___________________________________ Nama __
-                      //   children: [
-                      //     // Image.asset(
-                      //     //   'assets/images/joshua.png',
-                      //     //   width: 55,
-                      //     //   height: 55,
-                      //     // ),
-                      //     SizedBox(
-                      //       width: 12,
-                      //     ),
-                      //     Column(
-                      //       crossAxisAlignment: CrossAxisAlignment.start,
-                      //       children: [
-                      //         Container(
-                      //           padding: EdgeInsets.all(20),
-                      //           margin: EdgeInsets.only(left: 10),
-                      //           child: Card(
-                      //             color: whiteColor,
-                      //             //radius
-                      //             elevation: 5,
-                      //             shadowColor: ColorITC,
-                      //             child: Column(
-                      //               children: [
-                      //                 Align(
-                      //                   alignment: Alignment.topLeft,
-                      //                   child: Text(
-                      //                     'Nama',
-                      //                     textAlign: TextAlign.left,
-                      //                     style: TextStyle(
-                      //                       color: blackColor,
-                      //                       fontSize: 16,
-                      //                       fontWeight: FontWeight.w500,
-                      //                     ),
-                      //                   ),
-                      //                 ),
-                      //                 Text(
-                      //                     'Lorem ipsum dolor sit amet,consectetur adipiscing elit.',
-                      //                     style: TextStyle(
-                      //                         color: greyColor,
-                      //                         fontSize: 12,
-                      //                         fontWeight: FontWeight.bold)),
-                      //               ],
-                      //             ),
-                      //           ),
-                      //         )
-                      //       ],
-                      //     ),
-                      //     // Spacer(),
-                      //   ],
-                      // ),
                     ],
                   ),
                 ),
@@ -151,22 +58,17 @@ class HomePage extends StatelessWidget {
 
   Card buildCard(String judul, String isi) {
     return Card(
-      elevation: 3,
+      // elevation: 3,
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
-          //__ Nama __
           children: [
-            Image.asset(
-              'assets/images/joshua.png',
-              width: 55,
-              height: 55,
-            ),
+            // menambahkan image icon (w: 55 h: 55)
             SizedBox(
               width: 12,
             ),
             Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // menambahkan ca.start
               children: [
                 Text(
                   judul,
