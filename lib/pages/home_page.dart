@@ -73,7 +73,7 @@ class HomePage extends StatelessWidget {
                         height: 15,
                       ),
 
-                      buildCard("Hobby", "Bermain Game"),
+                      buildCard("Hobby", "Bermain Game dan futsal"),
                       SizedBox(
                         height: 15,
                       ),
