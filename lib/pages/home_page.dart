@@ -56,7 +56,8 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("Nama Lengkap", "Sabrina"),
+                      buildCard(
+                          "Nama Lengkap", "Sabrina khairunnisa binti zahir"),
                       SizedBox(
                         height: 15,
                       ),
@@ -73,7 +74,7 @@ class HomePage extends StatelessWidget {
                         height: 15,
                       ),
 
-                      buildCard("Hobby", "Bermain Game dan futsal"),
+                      buildCard("Hobby", "Bermain Game"),
                       SizedBox(
                         height: 15,
                       ),
@@ -151,32 +152,35 @@ class HomePage extends StatelessWidget {
   Card buildCard(String judul, String isi) {
     return Card(
       elevation: 3,
-      child: Row(
-        //__ Nama __
-        children: [
-          Image.asset(
-            'assets/images/joshua.png',
-            width: 55,
-            height: 55,
-          ),
-          SizedBox(
-            width: 12,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                judul,
-                style: titleText,
-              ),
-              Text(
-                isi,
-                style: subtitleText,
-              ),
-            ],
-          ),
-          // Spacer(),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          //__ Nama __
+          children: [
+            Image.asset(
+              'assets/images/joshua.png',
+              width: 55,
+              height: 55,
+            ),
+            SizedBox(
+              width: 12,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  judul,
+                  style: titleText,
+                ),
+                Text(
+                  isi,
+                  style: subtitleText,
+                ),
+              ],
+            ),
+            // Spacer(),
+          ],
+        ),
       ),
     );
   }
