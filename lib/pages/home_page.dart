@@ -56,87 +56,30 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("Nama Lengkap", "Sabrina"),
+                      buildCard("user", "Nama Lengkap", "Sabrina"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Prodi", "Teknik Informatika"),
+                      buildCard("prodi", "Prodi", "Teknik Informatika"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Devisi", "Mobile Development"),
+                      buildCard("divisi", "Devisi", "Mobile Development"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Alamat", "Sleman"),
+                      buildCard("alamat", "Alamat", "Sleman"),
                       SizedBox(
                         height: 15,
                       ),
-
-                      buildCard("Hobby", "Bermain Game"),
+                      buildCard("hobi", "Hobby", "Bermain Game"),
                       SizedBox(
                         height: 15,
                       ),
-
-                      buildCard("Motto", "Belajar dan Berdoa"),
+                      buildCard("moto", "Motto", "Belajar dan Berdoa"),
                       SizedBox(
                         height: 15,
                       ),
-
-                      // SizedBox(
-                      //   height: 16,
-                      // ),
-                      // Row(
-                      //   //___________________________________ Nama __
-                      //   children: [
-                      //     // Image.asset(
-                      //     //   'assets/images/joshua.png',
-                      //     //   width: 55,
-                      //     //   height: 55,
-                      //     // ),
-                      //     SizedBox(
-                      //       width: 12,
-                      //     ),
-                      //     Column(
-                      //       crossAxisAlignment: CrossAxisAlignment.start,
-                      //       children: [
-                      //         Container(
-                      //           padding: EdgeInsets.all(20),
-                      //           margin: EdgeInsets.only(left: 10),
-                      //           child: Card(
-                      //             color: whiteColor,
-                      //             //radius
-                      //             elevation: 5,
-                      //             shadowColor: ColorITC,
-                      //             child: Column(
-                      //               children: [
-                      //                 Align(
-                      //                   alignment: Alignment.topLeft,
-                      //                   child: Text(
-                      //                     'Nama',
-                      //                     textAlign: TextAlign.left,
-                      //                     style: TextStyle(
-                      //                       color: blackColor,
-                      //                       fontSize: 16,
-                      //                       fontWeight: FontWeight.w500,
-                      //                     ),
-                      //                   ),
-                      //                 ),
-                      //                 Text(
-                      //                     'Lorem ipsum dolor sit amet,consectetur adipiscing elit.',
-                      //                     style: TextStyle(
-                      //                         color: greyColor,
-                      //                         fontSize: 12,
-                      //                         fontWeight: FontWeight.bold)),
-                      //               ],
-                      //             ),
-                      //           ),
-                      //         )
-                      //       ],
-                      //     ),
-                      //     // Spacer(),
-                      //   ],
-                      // ),
                     ],
                   ),
                 ),
@@ -148,11 +91,10 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Card buildCard(String judul, String isi) {
+  Card buildCard(String gambar, String judul, String isi) {
     return Card(
       elevation: 3,
       child: Row(
-        //__ Nama __
         children: [
           Image.asset(
             'assets/images/joshua.png',
