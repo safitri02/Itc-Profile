@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_page.dart';
-import 'package:itc_profile2/theme.dart';
+import 'package:itc_profile/theme.dart';
 
 void main() {
   runApp(const Splash());
@@ -24,7 +24,7 @@ class Splash extends StatelessWidget {
         body: Center(
           child: ListView(
             //padding buat bungkus di listview
-            padding: EdgeInsets.all(25),
+            padding: const EdgeInsets.all(25),
             children: [
               Image.asset('assets/images/logoputih.png'),
               const Text(
@@ -37,7 +37,7 @@ class Splash extends StatelessWidget {
                   fontFamily: 'Poppins',
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               const Text(

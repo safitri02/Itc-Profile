@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:itc_profile2/theme.dart';
+import 'package:itc_profile/theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -56,27 +56,27 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("Nama Lengkap", "Sabrina"),
+                      buildCard("user", "Nama Lengkap", "Sabrina"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Prodi", "Teknik Informatika"),
+                      buildCard("prodi", "Prodi", "Teknik Informatika"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Devisi", "Mobile Development"),
+                      buildCard("divisi", "Devisi", "Mobile Development"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Alamat", "Sleman"),
+                      buildCard("alamat", "Alamat", "Sleman"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Hobby", "Bermain Game"),
+                      buildCard("hobi", "Hobby", "Bermain Game"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("Motto", "Belajar dan Berdoa"),
+                      buildCard("moto", "Motto", "Belajar dan Berdoa"),
                       SizedBox(
                         height: 15,
                       ),
@@ -91,11 +91,10 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Card buildCard(String judul, String isi) {
+  Card buildCard(String gambar, String judul, String isi) {
     return Card(
       elevation: 3,
       child: Row(
-        //__ Nama __
         children: [
           Image.asset(
             'assets/images/joshua.png',

@@ -8,9 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //hidden debug text
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(
         fontFamily: 'Poppins',
       ),
