@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
+import 'package:itc_profile2/theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -72,71 +72,14 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 15,
                       ),
-
                       buildCard("Hobby", "Bermain Game"),
                       SizedBox(
                         height: 15,
                       ),
-
                       buildCard("Motto", "Belajar dan Berdoa"),
                       SizedBox(
                         height: 15,
                       ),
-
-                      // SizedBox(
-                      //   height: 16,
-                      // ),
-                      // Row(
-                      //   //___________________________________ Nama __
-                      //   children: [
-                      //     // Image.asset(
-                      //     //   'assets/images/joshua.png',
-                      //     //   width: 55,
-                      //     //   height: 55,
-                      //     // ),
-                      //     SizedBox(
-                      //       width: 12,
-                      //     ),
-                      //     Column(
-                      //       crossAxisAlignment: CrossAxisAlignment.start,
-                      //       children: [
-                      //         Container(
-                      //           padding: EdgeInsets.all(20),
-                      //           margin: EdgeInsets.only(left: 10),
-                      //           child: Card(
-                      //             color: whiteColor,
-                      //             //radius
-                      //             elevation: 5,
-                      //             shadowColor: ColorITC,
-                      //             child: Column(
-                      //               children: [
-                      //                 Align(
-                      //                   alignment: Alignment.topLeft,
-                      //                   child: Text(
-                      //                     'Nama',
-                      //                     textAlign: TextAlign.left,
-                      //                     style: TextStyle(
-                      //                       color: blackColor,
-                      //                       fontSize: 16,
-                      //                       fontWeight: FontWeight.w500,
-                      //                     ),
-                      //                   ),
-                      //                 ),
-                      //                 Text(
-                      //                     'Lorem ipsum dolor sit amet,consectetur adipiscing elit.',
-                      //                     style: TextStyle(
-                      //                         color: greyColor,
-                      //                         fontSize: 12,
-                      //                         fontWeight: FontWeight.bold)),
-                      //               ],
-                      //             ),
-                      //           ),
-                      //         )
-                      //       ],
-                      //     ),
-                      //     // Spacer(),
-                      //   ],
-                      // ),
                     ],
                   ),
                 ),
