@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:itc_profile/theme.dart';
+import 'package:itc_profile2/theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
                   height: 20,
                 ),
                 Text(
-                  'Nama Panggilan',
+                  'Safitri',
                   style: TextStyle(
                     fontSize: 20,
                     color: whiteColor,
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                   height: 2,
                 ),
                 Text(
-                  '@namaIG',
+                  '@safitri16__',
                   style: TextStyle(
                     color: lightBlueColor,
                     fontSize: 16,
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("user", "Nama Lengkap", "Sabrina"),
+                      buildCard("user", "Dwi Safitri", "hallooo aku fitri"),
                       SizedBox(
                         height: 15,
                       ),
@@ -72,11 +72,11 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("hobi", "Hobby", "Bermain Game"),
+                      buildCard("hobi", "Hobby", "akdnoweiudh"),
                       SizedBox(
                         height: 15,
                       ),
-                      buildCard("moto", "Motto", "Belajar dan Berdoa"),
+                      buildCard("moto", "Motto", "Tetaplah bernafas"),
                       SizedBox(
                         height: 15,
                       ),
@@ -93,32 +93,35 @@ class HomePage extends StatelessWidget {
 
   Card buildCard(String gambar, String judul, String isi) {
     return Card(
-      elevation: 3,
-      child: Row(
-        children: [
-          Image.asset(
-            'assets/images/joshua.png',
-            width: 55,
-            height: 55,
-          ),
-          SizedBox(
-            width: 12,
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                judul,
-                style: titleText,
-              ),
-              Text(
-                isi,
-                style: subtitleText,
-              ),
-            ],
-          ),
-          // Spacer(),
-        ],
+      elevation: 4,
+      child: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Row(
+          children: [
+            Image.asset(
+              'assets/images/' + gambar + '.png',
+              width: 50,
+              height: 50,
+            ),
+            SizedBox(
+              width: 15,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  judul,
+                  style: titleText,
+                ),
+                Text(
+                  isi,
+                  style: subtitleText,
+                ),
+              ],
+            ),
+            // Spacer(),
+          ],
+        ),
       ),
     );
   }
