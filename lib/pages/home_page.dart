@@ -17,29 +17,14 @@ class HomePage extends StatelessWidget {
                   height: 40,
                 ),
                 // menambahkan image profile (w:100, h:100)
-                Image.asset('assets/images/cowo.png', width: 100, height: 100),
                 SizedBox(
                   height: 20,
                 ),
                 // menambahkan text profile (f: 20, c: white)
-                Text('Depit',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Color(0xffffffff),
-                      fontWeight: FontWeight.w500,
-                      fontFamily: 'Poppins',
-                    )),
                 SizedBox(
                   height: 2,
                 ),
                 // menambahkan username ig(f:16, c:lightblue)
-                Text('@depit_',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Color(0xff9ED0FF),
-                      fontWeight: FontWeight.w400,
-                      fontFamily: 'Poppins',
-                    )),
                 SizedBox(
                   height: 30,
                 ),
@@ -55,24 +40,7 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("nama", "Nama Lengkap", "David Diamanta"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("prodi", "Prodi", "Sistem Informasi"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("divisi", "Divisi", "Mobile Development"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("hobi", "Hobi", "Jogging"),
-                      SizedBox(
-                        height: 15,
-                      ),
-                      buildCard("motto", "Motto",
-                          "Those who survive are those \nwho adapt"),
+                      buildCard("nama", "Template", "Isi dari Template"),
                       SizedBox(
                         height: 15,
                       ),
@@ -89,8 +57,7 @@ class HomePage extends StatelessWidget {
 
   Card buildCard(String gambar, String judul, String isi) {
     return Card(
-      // elevation: 3,
-      elevation: 3,
+      // elevation: 2,
       shadowColor: lightITColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
@@ -109,7 +76,6 @@ class HomePage extends StatelessWidget {
             ),
             Column(
               // menambahkan ca.start
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   judul,
