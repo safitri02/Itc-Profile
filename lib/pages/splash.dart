@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:itc_puzzle/theme.dart';
 import 'home_page.dart';
+import 'package:itc_puzzle/theme.dart';
 
 class Splash extends StatelessWidget {
   const Splash({Key? key}) : super(key: key);

@@ -1,5 +1,5 @@
-import 'package:itc_puzzle/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:itc_puzzle/theme.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      buildCard("nama", "Template", "Isi dari Template"),
+                      buildCard("nama", "Nama Lengkap", "Deskripsi singkat"),
                       SizedBox(
                         height: 15,
                       ),
