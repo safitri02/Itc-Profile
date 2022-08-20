@@ -24,8 +24,9 @@ class Splash extends StatelessWidget {
                 fontFamily: 'Poppins',
               ),
             ),
-            // mebambahkan sizebox
+            // mebambahkan sizebox h:20
             // menambahkan text deskripsi dan style (f:17)
+
             SizedBox(
               height: 100,
             ),

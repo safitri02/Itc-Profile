@@ -38,7 +38,8 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    //crossAxisAlignment.start
+
                     children: [
                       buildCard("nama", "Nama Lengkap", "Deskripsi singkat"),
                       SizedBox(
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
 
   Card buildCard(String gambar, String judul, String isi) {
     return Card(
-      // elevation: 2,
+      // elevation: 5,
       shadowColor: lightITColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
