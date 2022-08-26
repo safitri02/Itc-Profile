@@ -17,14 +17,17 @@ class HomePage extends StatelessWidget {
                   height: 40,
                 ),
                 // menambahkan image profile (w:100, h:100)
+
                 SizedBox(
                   height: 20,
                 ),
                 // menambahkan text profile (f: 20, c: white)
+
                 SizedBox(
                   height: 2,
                 ),
                 // menambahkan username ig(f:16, c:lightblue)
+
                 SizedBox(
                   height: 30,
                 ),
@@ -38,9 +41,14 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    //crossAxisAlignment.start
+
                     children: [
-                      buildCard("nama", "Nama Lengkap", "Deskripsi singkat"),
+                      buildCard("nama", "Chaca", "hallo saya cacac"),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      buildCard("prodi", "Informatika", "akjhsnja"),
                       SizedBox(
                         height: 15,
                       ),
@@ -57,7 +65,8 @@ class HomePage extends StatelessWidget {
 
   Card buildCard(String gambar, String judul, String isi) {
     return Card(
-      // elevation: 2,
+      // Menambahkan elevation/shadow
+      // elevation: 5,
       shadowColor: lightITColor,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
@@ -75,7 +84,7 @@ class HomePage extends StatelessWidget {
               width: 12,
             ),
             Column(
-              // menambahkan ca.start
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   judul,
