@@ -10,22 +10,33 @@ class Splash extends StatelessWidget {
       backgroundColor: ITColor,
       body: Center(
         child: ListView(
-          //padding buat bungkus di listview
+          padding: EdgeInsets.all(25),
           children: [
             SizedBox(height: 100),
             // image for logo
-            const Text(
-              'ITC PROFILE!',
+            Image.asset('assets/images/logoputih.png'),
+            Text(
+              'ITC Profile ',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 30,
                 color: Color(0xffffffff),
+                fontSize: 30,
                 fontWeight: FontWeight.w500,
                 fontFamily: 'Poppins',
               ),
+            ), // menambahkan text deskripsi dan sty
+            SizedBox(
+              height: 20,
             ),
-            // mebambahkan sizebox h:20
-            // menambahkan text deskripsi dan style (f:17)
+            Text(
+                'wih! kamu sudah aplikasi kamu sendiri nih, coba klik “lihat profil” untuk melihat profil buatan kamu!',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: whiteColor,
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Poppins',
+                )),
 
             SizedBox(
               height: 100,
